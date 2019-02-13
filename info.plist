@@ -6,6 +6,32 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
+		<key>6B62EFD6-8B5B-4E20-BB7C-5DBCF1CE5B9B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C426851-9DBD-4643-9DBF-4BD3AD20B742</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D39D2F91-0FBF-4661-B026-F57437085583</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B62EFD6-8B5B-4E20-BB7C-5DBCF1CE5B9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F32B16BE-138F-4523-960F-775878AA1D76</key>
 		<array>
 			<dict>
@@ -30,25 +56,6 @@
 	<string>oh-my-zsh</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F7E06437-96E8-4AE7-82A4-237FD0B7403F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -96,11 +103,116 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F7E06437-96E8-4AE7-82A4-237FD0B7403F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>omz-refresh</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Refresh the oh-my-zsh plugin list</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D39D2F91-0FBF-4661-B026-F57437085583</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>oh-my-zsh plugins refreshed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7C426851-9DBD-4643-9DBF-4BD3AD20B742</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python oh-my-zsh.py refresh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6B62EFD6-8B5B-4E20-BB7C-5DBCF1CE5B9B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>6B62EFD6-8B5B-4E20-BB7C-5DBCF1CE5B9B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>7C426851-9DBD-4643-9DBF-4BD3AD20B742</key>
+		<dict>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>D39D2F91-0FBF-4661-B026-F57437085583</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
 		<key>F32B16BE-138F-4523-960F-775878AA1D76</key>
 		<dict>
 			<key>xpos</key>
