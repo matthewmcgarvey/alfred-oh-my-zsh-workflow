@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.matthewmcg.oh-my-zsh</string>
 	<key>connections</key>
 	<dict>
 		<key>6B62EFD6-8B5B-4E20-BB7C-5DBCF1CE5B9B</key>
@@ -47,7 +47,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Matthew McGarvey</string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
@@ -229,6 +229,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/matthewmcgarvey/alfred-oh-my-zsh-workflow</string>
 </dict>
 </plist>
