@@ -32,7 +32,13 @@ def main(wf):
     for content in data:
         if content['type'] == 'dir':
             url = content['html_url']
-            wf.add_item(title=content['name'], subtitle=url, arg=url, icon=ICON_WEB, valid=True)
+            wf.add_item(
+                title=content['name'],
+                subtitle=url,
+                arg=url,
+                icon=ICON_WEB,
+                valid=True,
+                uid=url)
     wf.send_feedback()
 
 if __name__ == u"__main__":
